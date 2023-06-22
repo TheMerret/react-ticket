@@ -1,6 +1,8 @@
 const express = require('express');
-const api = require('./api');
 const bodyParser = require('body-parser');
+
+const api = require('./api');
+
 const port = 3001;
 
 const app = express();

@@ -1,12 +1,13 @@
-const router = require("express").Router();
-const { cinemas, movies, reviews } = require("./mock");
-const { reply, getById } = require("./utils");
+const router = require('express').Router();
 
-router.get("/cinemas", (req, res, next) => {
+const { cinemas, movies, reviews } = require('./mock');
+const { reply, getById } = require('./utils');
+
+router.get('/cinemas', (req, res, next) => {
   reply(res, cinemas);
 });
 
-router.get("/movies", (req, res, next) => {
+router.get('/movies', (req, res, next) => {
   const { cinemaId } = req.query;
   let result = movies;
 
@@ -21,7 +22,7 @@ router.get("/movies", (req, res, next) => {
   reply(res, result);
 });
 
-router.get("/movie", (req, res, next) => {
+router.get('/movie', (req, res, next) => {
   const { movieId } = req.query;
   let result = null;
 
@@ -32,7 +33,7 @@ router.get("/movie", (req, res, next) => {
   reply(res, result);
 });
 
-router.get("/reviews", (req, res, next) => {
+router.get('/reviews', (req, res, next) => {
   const { movieId } = req.query;
 
   let result = reviews;
