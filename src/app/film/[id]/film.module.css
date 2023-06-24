@@ -1,0 +1,92 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.film {
+  display: flex;
+  padding: 1.5rem;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.film {
+  border-radius: 8px;
+  background: #fff;
+}
+
+.poster {
+  border-radius: 8px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  flex: 1 0 0;
+}
+
+.title {
+  color: var(--text-primary, #1b1f23);
+  font-size: 2rem;
+  font-family: Roboto;
+  font-weight: 600;
+  line-height: 2rem;
+}
+
+.short {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.description span {
+  color: var(--text-primary, #1b1f23);
+  font-size: 1.25rem;
+  font-family: Roboto;
+  font-weight: 600;
+  line-height: 1.5rem;
+}
+
+.short span:first-child::after {
+  content: ':';
+}
+
+.short div {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  align-self: stretch;
+}
+
+.review {
+  display: flex;
+  padding: 1.5rem;
+  align-items: flex-start;
+  gap: 2rem;
+  flex: 1 0 0;
+}
+
+.review {
+  border-radius: 8px;
+  background: #fff;
+}
+
+.review-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: stretch;
+}

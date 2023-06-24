@@ -1,0 +1,16 @@
+.about {
+  padding: 1.5rem;
+}
+
+.about {
+  border-radius: 8px;
+  background: #fff;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  align-self: stretch;
+}

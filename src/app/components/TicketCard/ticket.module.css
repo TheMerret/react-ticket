@@ -1,0 +1,32 @@
+.ticket {
+  display: flex;
+  height: 10rem;
+  padding: 1.5rem;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.ticket {
+  border-radius: 8px;
+  background: #fff;
+}
+
+.poster {
+  border-radius: 8px;
+}
+
+.content {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  flex: 1 0 0;
+}

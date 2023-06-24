@@ -1,7 +1,9 @@
+import styles from './about.module.css';
+
 export default function About() {
   return (
     <main>
-      <article>
+      <article className={styles.about}>
         <h1>О нас</h1>
         <p>
           Мы — крупнейший сервис о кино в рунете. На нем вы сможете посмотреть

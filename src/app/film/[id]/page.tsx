@@ -1,13 +1,15 @@
 import Image from 'next/image';
 import { FunctionComponent } from 'react';
 
+import styles from './film.module.css';
+
 type Props = {
   params: { id: number };
 };
 
 const Film: FunctionComponent<Props> = function ({ params }) {
   return (
-    <main>
+    <main className={styles.main}>
       <FilmDetail
         posterSrc="https://i.postimg.cc/pdCLNMqX/1.webp"
         title="Властелин колец: Братство Кольца"
@@ -52,25 +54,38 @@ const FilmDetail: FunctionComponent<FilmDetailProps> = function ({
   description,
 }) {
   return (
-    <div>
+    <div className={styles.film}>
       <div>
         <Image
+          className={styles.poster}
           src={posterSrc}
           alt="Film Poster"
-          width="100"
-          height="120"
+          width="400"
+          height="500"
         ></Image>
       </div>
-      <div>
-        <h1>{title}</h1>
-        <div>
-          <div>Жанр: {genre}</div>
-          <div>Год выпуска: {year}</div>
-          <div>Рейтинг: {rating}</div>
-          <div>Режиссер: {director}</div>
+      <div className={styles.description}>
+        <h1 className={styles.title}>{title}</h1>
+        <div className={styles.short}>
+          <div>
+            <span>Жанр</span>
+            {genre}
+          </div>
+          <div>
+            <span>Год выпуска</span>
+            {year}
+          </div>
+          <div>
+            <span>Рейтинг</span>
+            {rating}
+          </div>
+          <div>
+            <span>Режиссер</span>
+            {director}
+          </div>
         </div>
-        <div>
-          <div>Описание</div>
+        <div className={styles.about}>
+          <span>Описание</span>
           <p>{description}</p>
         </div>
       </div>
@@ -90,7 +105,7 @@ const ReviewCard: FunctionComponent<ReviewCardProps> = function ({
   rating,
 }) {
   return (
-    <article>
+    <article className={styles.review}>
       <div>
         <Image
           src="/photo.svg"
@@ -100,7 +115,7 @@ const ReviewCard: FunctionComponent<ReviewCardProps> = function ({
         ></Image>
       </div>
       <div>
-        <div>
+        <div className={styles['review-title']}>
           <h1>{name}</h1>
           <span>Оценка: {rating}</span>
         </div>

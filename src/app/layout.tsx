@@ -1,5 +1,8 @@
 import Image from 'next/image';
 
+import './globals.css';
+import styles from './layout.module.css';
+
 export default function RootLayout({
   children,
 }: {
@@ -9,15 +12,23 @@ export default function RootLayout({
     <html lang="ru">
       <body>
         <header>
-          <h1>
-            <a href="/">Билетопоиск</a>
-          </h1>
-          <a href="#">
-            <Image src="/basket.svg" alt="basket" height="28" width="25" />
-          </a>
+          <nav className={styles.navbar}>
+            <a className={styles.logo} href="/">
+              Билетопоиск
+            </a>
+            <a href="/cart">
+              <Image
+                src="/basket.svg"
+                className={styles.cart}
+                alt="basket"
+                height="32"
+                width="32"
+              />
+            </a>
+          </nav>
         </header>
         {children}
-        <footer>
+        <footer className={styles.footer}>
           <a href="/faq">Вопросы-ответы</a>
           <a href="/about">О нас</a>
         </footer>

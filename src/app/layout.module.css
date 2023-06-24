@@ -1,0 +1,33 @@
+.navbar {
+  display: flex;
+  padding: 1.5rem 2rem;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--gray-1, #333);
+}
+
+.navbar,
+.footer {
+  color: #fff;
+  font-family: Roboto;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.cart {
+  color: #fff;
+  width: 2rem;
+  height: 2rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--gray-1, #333);
+  padding: 1.5rem 2rem;
+  font-size: 1.25rem;
+}
