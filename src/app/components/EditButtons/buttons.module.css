@@ -1,0 +1,23 @@
+.edit {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.edit button {
+  border-radius: 4px;
+  background: var(--orange, #f50);
+}
+
+.edit button:disabled {
+  background: var(--orange-disabled, #ffa375);
+}
+
+.edit button:hover {
+  background: var(--orange-hover, #e94e00);
+}
+
+.close {
+  background: none;
+  border: none;
+}
