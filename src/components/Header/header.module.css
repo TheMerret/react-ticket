@@ -1,0 +1,31 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.navbar {
+  display: flex;
+  padding: 1.5rem 2rem;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--gray-1, #333);
+}
+
+.navbar {
+  color: #fff;
+  font-family: Roboto;
+}
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.cart {
+  color: #fff;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}

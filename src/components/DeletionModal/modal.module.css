@@ -1,0 +1,24 @@
+.modal {
+  display: flex;
+  padding: 1.5rem;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1.5rem;
+}
+
+.modal {
+  border-radius: 8px;
+  background: var(--white, #fff);
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}

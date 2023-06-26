@@ -1,6 +1,6 @@
-import { QuestionAnswer } from '../components/QuestionAnswer/QuestionAnswer';
-
 import styles from './faq.module.css';
+
+import { QuestionAnswer } from '@/components/QuestionAnswer/QuestionAnswer';
 
 export default function Faq() {
   return (
