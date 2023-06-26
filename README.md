@@ -1,6 +1,16 @@
-# Описание простого апи
+# ReactTicket
 
 Запускаем сервер командой `node src/index.js`
+
+## Запускаем фронт
+
+```shell
+npm i
+```
+
+```shell
+npm run dev
+```
 
 Дефолтно запускается сервер на http://localhost:3001.
 
