@@ -2,6 +2,7 @@
 
 import { FunctionComponent, useCallback } from 'react';
 import { useDispatch } from 'react-redux';
+import Image from 'next/image';
 
 import styles from './modal.module.css';
 
@@ -28,18 +29,23 @@ const DeletionModal: FunctionComponent<Props> = function ({
       <div className={styles.title}>
         <h2>Удаление билета</h2>
         <button
+          className={styles.close}
           onClick={closeModal}
           type="submit"
           aria-label="close"
           formMethod="dialog"
         >
-          X
+          <Image src="/close.svg" alt="close" width={20} height={20}></Image>
         </button>
       </div>
       <p>Вы уверены, что хотите удалить билет?</p>
       <div className={styles.buttons}>
-        <button onClick={remove}>Да</button>
-        <button onClick={closeModal}>Нет</button>
+        <button className={styles.primary} onClick={remove}>
+          Да
+        </button>
+        <button className={styles.secondary} onClick={closeModal}>
+          Нет
+        </button>
       </div>
     </div>
   );

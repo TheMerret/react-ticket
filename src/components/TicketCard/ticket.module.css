@@ -1,6 +1,6 @@
 .ticket {
   display: flex;
-  height: 10rem;
+  height: 10.5rem;
   padding: 1.5rem;
   align-items: flex-start;
   gap: 1.5rem;
@@ -13,6 +13,8 @@
 
 .poster {
   border-radius: 8px;
+  height: 100%;
+  width: 6.25rem;
 }
 
 .content {
@@ -29,4 +31,18 @@
   align-items: flex-start;
   gap: 0.5rem;
   flex: 1 0 0;
+}
+
+.title {
+  color: var(--text-primary, #1b1f23);
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+}
+
+.genre {
+  color: var(--text-primary, #1b1f23);
+  font-size: 1rem;
+  font-style: italic;
+  line-height: 1.25rem;
 }

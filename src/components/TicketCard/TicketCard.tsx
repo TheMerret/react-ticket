@@ -6,6 +6,8 @@ import { EditButtons } from '../EditButtons/EditButtons';
 
 import styles from './ticket.module.css';
 
+import { genreMap } from '@/types/types';
+
 export type Film = {
   title: string;
   posterUrl: string;
@@ -29,13 +31,15 @@ export const TicketCard: FunctionComponent<Props> = function ({ film }) {
         className={styles.poster}
         src={film.posterUrl}
         alt="Film Poster"
-        width="100"
-        height="120"
+        width={300}
+        height={450}
       ></Image>
       <div className={styles.content}>
         <div className={styles.description}>
-          <Link href={`/film/${film.id}`}>{film.title}</Link>
-          <span>{film.genre}</span>
+          <Link className={styles.title} href={`/film/${film.id}`}>
+            {film.title}
+          </Link>
+          <span className={styles.genre}>{genreMap[film.genre]}</span>
         </div>
         <EditButtons movieId={film.id}></EditButtons>
       </div>

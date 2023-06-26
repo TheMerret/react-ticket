@@ -23,7 +23,7 @@ const TicketFilters: FunctionComponent = function ({}) {
 
   return (
     <aside className={styles.filters}>
-      <h1>Фильтры</h1>
+      <h1>Фильтры поиска</h1>
       <div className={styles.filter}>
         <label htmlFor="title">Название</label>
         <input

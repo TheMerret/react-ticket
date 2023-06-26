@@ -3,6 +3,7 @@ import React, { FunctionComponent, ReactNode } from 'react';
 import OptionsContext from './OptionsContext';
 
 import { useGetCinemasQuery } from '@/redux/services/movieApi';
+import { genreMap } from '@/types/types';
 
 type Props = {
   children: ReactNode;
@@ -29,13 +30,6 @@ export const CinemasProvider: FunctionComponent<Props> = function ({
       {children}
     </OptionsContext.Provider>
   );
-};
-
-export const genreMap = {
-  fantasy: 'Фэнтези',
-  horror: 'Ужасы',
-  action: 'Боевик',
-  comedy: 'Комедия',
 };
 
 export const GenresProvider: FunctionComponent<Props> = function ({

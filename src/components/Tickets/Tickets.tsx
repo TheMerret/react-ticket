@@ -11,6 +11,14 @@ import { TicketsContext } from '@/contexts/TicketsContext';
 const Tickets: FunctionComponent = function ({}) {
   const { films } = useContext(TicketsContext);
 
+  if (!films.length) {
+    return (
+      <div>
+        <h2>Нет билетов</h2>
+      </div>
+    );
+  }
+
   return (
     <div className={styles.tickets}>
       {films.map((film) => (

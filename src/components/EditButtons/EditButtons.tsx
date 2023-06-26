@@ -37,27 +37,30 @@ export const EditButtons: FunctionComponent<Props> = function ({ movieId }) {
   return (
     <>
       <div className={styles.edit}>
-        <button disabled={ticketsAmount === 0} onClick={decrement}>
+        <button
+          className={styles.change}
+          disabled={ticketsAmount === 0}
+          onClick={decrement}
+        >
           <Image src="/minus.svg" alt="minus" width="12" height="12"></Image>
         </button>
         <p>{ticketsAmount}</p>
-        <button disabled={ticketsAmount >= MAX_TICKETS} onClick={increment}>
+        <button
+          className={styles.change}
+          disabled={ticketsAmount >= MAX_TICKETS}
+          onClick={increment}
+        >
           <Image src="/plus.svg" alt="plus" width="12" height="12"></Image>
         </button>
+        {isRemoveButtonAdded && (
+          <button
+            onClick={() => setIsRemoveModalOpen((isOpen) => !isOpen)}
+            className={styles.close}
+          >
+            <Image src="/close.svg" alt="close" width={20} height={20}></Image>
+          </button>
+        )}
       </div>
-      {isRemoveButtonAdded && (
-        <button
-          onClick={() => setIsRemoveModalOpen((isOpen) => !isOpen)}
-          className={styles.close}
-        >
-          <Image
-            src="/close.svg"
-            alt="close"
-            width={12.5}
-            height={12.5}
-          ></Image>
-        </button>
-      )}
       {isRemoveModalOpen && (
         <ModalWrapper
           isOpen={isRemoveModalOpen}

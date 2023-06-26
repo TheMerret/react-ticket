@@ -29,7 +29,6 @@
 .title {
   color: var(--text-primary, #1b1f23);
   font-size: 2rem;
-  font-family: Roboto;
   font-weight: 600;
   line-height: 2rem;
 }
@@ -44,7 +43,6 @@
 .description span {
   color: var(--text-primary, #1b1f23);
   font-size: 1.25rem;
-  font-family: Roboto;
   font-weight: 600;
   line-height: 1.5rem;
 }

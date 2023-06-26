@@ -12,7 +12,7 @@ const TicketsTotal: FunctionComponent = function ({}) {
 
   return (
     <div className={styles.total}>
-      <span>Итого билетов</span>
+      <span>Итого билетов:</span>
       <span>{ticketsAmount}</span>
     </div>
   );

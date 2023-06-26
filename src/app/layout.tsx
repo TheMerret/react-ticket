@@ -1,6 +1,6 @@
-import Image from 'next/image';
-
 import './globals.css';
+import Link from 'next/link';
+
 import { StoreProvider } from '../redux/StoreProvider';
 
 import styles from './layout.module.css';
@@ -19,8 +19,8 @@ export default function RootLayout({
           <Header></Header>
           {children}
           <footer className={styles.footer}>
-            <a href="/faq">Вопросы-ответы</a>
-            <a href="/about">О нас</a>
+            <Link href="/faq">Вопросы-ответы</Link>
+            <Link href="/about">О нас</Link>
           </footer>
         </StoreProvider>
       </body>

@@ -17,7 +17,9 @@ const Header = function () {
           Билетопоиск
         </Link>
         <Link href="/cart" className={styles.cart}>
-          {ticketsAmount > 0 && <p>{ticketsAmount}</p>}
+          {ticketsAmount > 0 && (
+            <p className={styles.amount}>{ticketsAmount}</p>
+          )}
           <Image
             src="/basket.svg"
             className={styles.cart}

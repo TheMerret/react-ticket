@@ -9,6 +9,7 @@ import { EditButtons } from '../EditButtons/EditButtons';
 import styles from './card.module.css';
 
 import { useGetMovieByIdQuery } from '@/redux/services/movieApi';
+import { genreMap } from '@/types/types';
 
 type Props = {
   filmId: string;
@@ -46,7 +47,7 @@ const FilmCard: FunctionComponent<Props> = function ({ filmId }) {
         <div className={styles.short}>
           <div>
             <span>Жанр</span>
-            {film.genre}
+            {genreMap[film.genre]}
           </div>
           <div>
             <span>Год выпуска</span>

@@ -22,3 +22,57 @@
   align-items: flex-start;
   gap: 0.5rem;
 }
+
+.close {
+  background: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 4px;
+}
+
+.close:hover {
+  background-color: #bbbbbb;
+}
+
+.primary {
+  display: flex;
+  height: 2.5rem;
+  padding: 0.5rem 1rem;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.primary {
+  border: none;
+  color: #fff;
+  border-radius: 8px;
+  background: var(--orange, #f50);
+}
+
+.primary:hover {
+  filter: contrast(90%);
+}
+
+.secondary {
+  display: flex;
+  height: 2.5rem;
+  padding: 0.5rem 1rem;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.secondary {
+  color: #f50;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid var(--orange, #f50);
+}
+
+.secondary:hover {
+  filter: contrast(90%);
+}

@@ -7,6 +7,15 @@
 }
 
 .total {
+  display: flex;
+  padding: 1.5rem;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+.total {
   border-radius: 8px;
   background: #fff;
+  font-weight: 600;
 }

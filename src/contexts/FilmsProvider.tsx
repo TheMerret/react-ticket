@@ -6,7 +6,7 @@ import { useSelector } from 'react-redux';
 import { TicketsContext } from './TicketsContext';
 
 import {
-  useGetMovieByCinemaIdQuery,
+  useGetMoviesByCinemaIdQuery,
   useGetMoviesQuery,
 } from '@/redux/services/movieApi';
 import { selectFilter } from '@/redux/features/filters/selector';
@@ -24,7 +24,7 @@ const TicketProvider: FunctionComponent<Props> = function ({ children }) {
 
   /* eslint-disable react-hooks/rules-of-hooks */
   const { data, isLoading, error } = filter.cinema
-    ? useGetMovieByCinemaIdQuery(filter.cinema)
+    ? useGetMoviesByCinemaIdQuery(filter.cinema)
     : useGetMoviesQuery(null);
   /* eslint-enable react-hooks/rules-of-hooks */
 
